@@ -1,38 +1,91 @@
-.App {
+body,
+html,
+#root {
+  height: 100%;
+}
+
+html{
+  font-size: 10px;
+}
+
+h1{
+  padding-left: 0%;
+  text-align: right;
+  font-family: "Montserrate",sans-serif;
+  font-weight: bold;
+  font-size:30px;
+  color: rgb(29, 39, 70);
+}
+
+h1 .highlight{
+  color: rgb(46, 113, 238);
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+h2{
+  padding-top: 5%;
   text-align: center;
+  font-weight: bold;
+  font-size: 50PX;
+  color: rgb(78, 5, 27);
+  font-family: "Monteserrate",sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h3{
+  padding-top: 2%;
+  padding-bottom: 2%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40PX;
+  color: rgb(53, 37, 1);
+  font-family: "Monteserrate",sans-serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+h4{
+  padding-bottom: 5%;
+  font-weight: bold;
+  font-size: 20px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
+  color: rgb(1, 41, 34);
+  font-family: "Monteserrate",sans-serif;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  margin-bottom: 2em;
+  background-color: rgb(211, 210, 210);
+}
+h5{
+  padding-top: 5%;
+  font-weight: 70%;
+  font-size: 20px;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  margin-bottom: 2em;
+  background-color: brown;
+  color: #fff;
+  font-family: "Monteserrate",sans-serif;
+}
+.App{
+  height: 100%;
+  padding: 0.17% 10% 17%;
+  background-image: url("./DhanSuv3.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Montserrate",sans-serif;
+  font-weight: 500;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media  only screen and (max-width:1020px){
+  .App.playlist{
+    align-items: center;
+    flex-direction: column;
   }
 }
