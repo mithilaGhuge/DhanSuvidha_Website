@@ -10,7 +10,7 @@ html{
 
 h1{
   padding-left: 0%;
-  text-align: right;
+  text-align: left;
   font-family: "Montserrate",sans-serif;
   font-weight: bold;
   font-size:30px;
@@ -67,8 +67,8 @@ h5{
   justify-content: center;
   padding: 1em;
   margin-bottom: 2em;
-  background-color: brown;
-  color: #fff;
+  background-color: rgb(200, 243, 192);
+  color: rgb(155, 51, 51);
   font-family: "Monteserrate",sans-serif;
 }
 .App{
