@@ -1,10 +1,4 @@
-.box {
-  border: 3px solid black;
-}
-
-.mainDiv {
-}
-
-.bodyDiv {
-  height: 80%;
+hr {
+  padding: 0;
+  margin: 0;
 }

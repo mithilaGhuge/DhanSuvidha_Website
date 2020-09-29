@@ -7,14 +7,15 @@ import "./index.css";
 import * as serviceWorker from "./serviceWorker";
 
 let layout = (
-  <div className="container-fluid mainDiv box">
-    <div className="container-fluid headerDiv box">
+  <div className="">
+    <div className="">
       <HeaderComponent />
     </div>
-    <div className="container-fluid bodyDiv box">
+    <hr />
+    <div className="container-fluid">
       <BodyComponent></BodyComponent>
     </div>
-    <div className="container-fluid footerDiv box">
+    <div className="container-fluid">
       Insert footer component here
       <FooterComponent></FooterComponent>
     </div>
