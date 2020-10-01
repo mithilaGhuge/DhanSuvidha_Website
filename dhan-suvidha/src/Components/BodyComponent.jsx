@@ -3,104 +3,52 @@ import { Container, Row, Col, Form, Card, CardColumns, Button } from 'react-boot
 import 'bootstrap/dist/css/bootstrap.min.css';
 import RegisterForm from "./RegistrationForm.jsx"
 import "./BodyComponent.css";
+import background from "../images/background.png";
 
 
 class BodyComponent extends Component {
   state = {};
+  
   render() {
     return (
       <Container fluid>
-        <div className="split left">
-          <Container style={{padding:"20px"}}>
-            <Container>
-              <Row>
-                <CardColumns className="container">
-                  <Card className="card">
-                    <Card.Body>
-                      <Card.Text>Pre-IPO</Card.Text>
-                    </Card.Body>
-                  </Card>
-                  <Card className="card">
-                    <Card.Body>
-                      <Card.Text>US $ Funds</Card.Text>
-                    </Card.Body>
-                  </Card>
-                </CardColumns>
-              </Row>
-            </Container>
-            <Container>
-              <Row>
-                <CardColumns className="container" >
-                  <Card className="card">
-                    <Card.Body>
-                      <Card.Text>Loans</Card.Text>
-                    </Card.Body>
-                  </Card>
-                  <Card className="card">
-                    <Card.Body>
-                      <Card.Text>UK Funds</Card.Text>
-                    </Card.Body>
-                  </Card>
-                </CardColumns>
-              </Row>
-            </Container>
-            <Container>
-              <Row>
-                <CardColumns className="container" >
-                  <Card className="card">
-                    <Card.Body>
-                      <Card.Text>Real Estate</Card.Text>
-                    </Card.Body>
-                  </Card>
-                  <Card className="card">
-                    <Card.Body>
-                      <Card.Text>Insurance</Card.Text>
-                    </Card.Body>
-                  </Card>
-                </CardColumns>
-              </Row>
-            </Container>
-            <Container>
-              <Row>
-                <CardColumns className="container" >
-                  <Card className="card">
-                    <Card.Body>
-                      <Card.Text>PMS</Card.Text>
-                    </Card.Body>
-                  </Card>
-                  <Card className="card">
-                    <Card.Body>
-                      <Card.Text>IT Services</Card.Text>
-                    </Card.Body>
-                  </Card>
-                </CardColumns>
-              </Row>
-            </Container>
-            <Container>
-              <Row>
-                <CardColumns className="container" >
-                  <Card className="card">
-                    <Card.Body>
-                      <Card.Text>Mutual Funds</Card.Text>
-                    </Card.Body>
-                  </Card>
-                </CardColumns>
-              </Row>
-            </Container>
-          </Container>
-        </div>
-
-        <Container>
-          <div className="split right">
-          <RegisterForm></RegisterForm>
-
+        <div className="row">
+          <div className="col-sm-8" style={{ paddingTop: "50px", paddingLeft: "10vw", backgroundImage: `url(${require("../images/background.png")})`,backgroundSize:"cover",backgroundRepeat: 'no-repeat'}}>
+              <div className="container">
+                <div className="row">
+                  <div className="col-sm-4 box">Pre-IPO</div>
+                  <div className="col-sm-2" ></div><br></br>
+                  <div className="col-sm-4 box">US $ Funds</div>
+                </div>
+                <br></br>
+                <div className="row">
+                  <div className="col-sm-4 box">Loans</div>
+                  <div className="col-sm-2" ></div><br></br>
+                  <div className="col-sm-4 box">UK Funds</div>
+                </div>
+                <br></br>
+                <div className="row">
+                  <div className="col-sm-4 box">Real Estate</div>
+                  <div className="col-sm-2" ></div><br></br>
+                  <div className="col-sm-4 box">Insurance</div>
+                </div>
+                <br></br>
+                <div className="row">
+                  <div className="col-sm-4 box">PMS</div>
+                  <div className="col-sm-2" ></div><br></br>
+                  <div className="col-sm-4 box">IT-Services</div>
+                </div>
+                <br></br>
+                <div className="row">
+                  <div className="col-sm-4 box">Mutual Funds</div>
+                </div>
+              </div>
+            </div> 
+          <div className="col-sm-4" style={{backgroundColor:"rgb(248, 244, 239)"}}>
+            <RegisterForm></RegisterForm>
           </div>
-        </Container>
-
-
+        </div>
       </Container>
-
-
     );
   }
 }
