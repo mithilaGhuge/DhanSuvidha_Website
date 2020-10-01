@@ -16,7 +16,7 @@ let layout = (
       <BodyComponent></BodyComponent>
     </div>
     <div className="container-fluid">
-      Insert footer component here
+     
       <FooterComponent></FooterComponent>
     </div>
   </div>
