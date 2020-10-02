@@ -8,7 +8,7 @@ import {
   CardColumns,
   Button,
 } from "react-bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
+//import "bootstrap/dist/css/bootstrap.min.css";
 import RegisterForm from "./RegistrationForm.jsx";
 import "./BodyComponent.css";
 import background from "../images/background.png";
