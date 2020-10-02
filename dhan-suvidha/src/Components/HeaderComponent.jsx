@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "./HeaderComponent.css";
 import logo from "../images/dhanSuvidhaLogo.png";
-import { Container, Row } from "react-bootstrap";
 
 class HeaderComponent extends Component {
   state = {};
@@ -21,6 +20,11 @@ class HeaderComponent extends Component {
           </button>
           <div id="navbarMenu" className="collapse navbar-collapse">
             <ul className="navbar-nav ml-auto ">
+              <li className="nav-item">
+                <a href="#" className="nav-link">
+                  <strong className="text">About Us</strong>
+                </a>
+              </li>
               <li className="nav-item">
                 <a href="#" className="nav-link">
                   <strong className="text">Financial Calculator</strong>
