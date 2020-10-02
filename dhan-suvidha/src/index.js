@@ -4,21 +4,20 @@ import HeaderComponent from "./Components/HeaderComponent";
 import BodyComponent from "./Components/BodyComponent";
 import FooterComponent from "./Components/FooterComponent";
 import "./index.css";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import * as serviceWorker from "./serviceWorker";
 
 let layout = (
   <div className="">
-    <div className="">
-      <HeaderComponent />
-    </div>
+    <HeaderComponent />
     <hr />
-    <div className="container-fluid">
-      <BodyComponent></BodyComponent>
-    </div>
-    <div className="container-fluid">
-     
-      <FooterComponent></FooterComponent>
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/" exact component={BodyComponent} />
+        <Route path="/foot" component={FooterComponent} />
+      </Switch>
+    </Router>
+    <FooterComponent></FooterComponent>
   </div>
 );
 
