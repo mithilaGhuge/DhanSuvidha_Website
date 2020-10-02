@@ -1,0 +1,36 @@
+.footerBox {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  background-color: #004767;
+}
+.footerDiv {
+  border-radius: 1em;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  display: flex;
+  width: 20em;
+  margin: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  flex-flow: column;
+  align-items: left;
+  height: 13em;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+h5 {
+  font-weight: bold;
+}
+.social {
+  height: 2em;
+  width: 2em;
+  margin-top: 1em;
+  background-color: white;
+  border-radius: 0.3em;
+}
+.footLink {
+  padding-bottom: 1em;
+}
