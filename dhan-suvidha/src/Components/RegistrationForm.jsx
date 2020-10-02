@@ -763,13 +763,13 @@ class RegistrationForm extends Component {
 
                     <Form.Row className="form-inline" style={{paddingBottom:"10px",paddingLeft:"5px" ,fontWeight:"lighter"}}>
                     <Form.Group controlId="formGridMobileOTP">
-                            <p style={{fontSize:"1rem"}}>Enter OTP :- </p>
+                            <p style={{fontSize:"1rem"}}>Enter OTP :- &nbsp;</p>
                         
                             <OtpInput
                                 value={this.state.otp}
                                 onChange={this.handleChange}
                                 numInputs={6}
-                                separator={<span></span>}
+                                separator={<span> &nbsp;&nbsp;</span>}
                             />
                         </Form.Group>
                     </Form.Row>
