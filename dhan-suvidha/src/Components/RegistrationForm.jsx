@@ -784,13 +784,13 @@ class RegistrationForm extends Component {
                         <Form.Control type="password" placeholder="Retype yout password" />
                     </Form.Group>
 
-                    <Form.Row className="form-check-inline" >
+                    <Form.Row>
                         <Form.Group id="formGridCheckasUser">
-                            <Form.Check classtype="radio" label="User" />
+                            <Form.Check type="radio" inline label="User" />
                         </Form.Group>
 
                         <Form.Group id="formGridCheckasPartner">
-                            <Form.Check type="radio" label="Partner" />
+                            <Form.Check type="radio" inline label="Partner" />
                         </Form.Group>
                     </Form.Row>
                     <Form.Row>
