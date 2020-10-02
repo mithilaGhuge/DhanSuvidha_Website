@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "./HeaderComponent.css";
 import logo from "../images/dhanSuvidhaLogo.png";
-import { Container, Row } from "react-bootstrap";
 
 class HeaderComponent extends Component {
   state = {};
