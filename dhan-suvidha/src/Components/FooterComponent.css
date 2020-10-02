@@ -1,8 +1,14 @@
 .footerBox {
   display: flex;
   flex-flow: row;
+  margin-top: 0.11em;
   justify-content: space-evenly;
-  background-color: #004767;
+  background-image: linear-gradient(
+    to right,
+    rgb(11, 99, 158),
+    rgb(124, 197, 124)
+  );
+  /* background-color: #004767; */
 }
 .footerDiv {
   border-radius: 1em;
