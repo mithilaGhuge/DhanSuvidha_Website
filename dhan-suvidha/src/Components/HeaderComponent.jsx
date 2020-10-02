@@ -22,6 +22,11 @@ class HeaderComponent extends Component {
             <ul className="navbar-nav ml-auto ">
               <li className="nav-item">
                 <a href="#" className="nav-link">
+                  <strong className="text">About Us</strong>
+                </a>
+              </li>
+              <li className="nav-item">
+                <a href="#" className="nav-link">
                   <strong className="text">Financial Calculator</strong>
                 </a>
               </li>

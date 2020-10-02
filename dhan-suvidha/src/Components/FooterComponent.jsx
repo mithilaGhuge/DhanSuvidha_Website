@@ -43,7 +43,11 @@ class FooterComponent extends Component {
         </div>
         <div className="footerDiv">
           <div>
-            <h5>Address</h5> <p> Sushant arcade Gurgaon 122009</p>
+            <h5>Address :</h5> <p> Sushant arcade Gurgaon 122009</p>
+          </div>
+          <div>
+            MAP
+            <p></p>
           </div>
           <div>Phone Number : +91 99991 97734</div>
           <div>Email : info@dhansuvidha.com</div>

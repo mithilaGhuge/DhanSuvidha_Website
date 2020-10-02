@@ -3,13 +3,15 @@ import { Container, Row, Col, Form, Card, CardColumns, Button, FormControl } fro
 import "./RegistrationForm.css";
 import 'react-phone-number-input/style.css'
 import PhoneInput from 'react-phone-number-input'
+import OtpInput from 'react-otp-input';
 import { formatPhoneNumberIntl } from 'react-phone-number-input'
 
 class RegistrationForm extends Component {
-    state = {};
+    state = { otp: '' };
+ 
     render() {
         return (
-            <Container style={{padding:"20px"}}>
+            <Container style={{ padding: "20px" }}>
                 <Form>
                     <Form.Row Row={3}>
                         <Form.Group as={Col} controlId="formGridName">
@@ -18,7 +20,7 @@ class RegistrationForm extends Component {
                     </Form.Row>
 
                     <Form.Row>
-                        <Form.Group controlId="formGridCountry" style={{fontSize:"normal"}}>
+                        <Form.Group controlId="formGridCountry" style={{ fontSize: "normal" }}>
                             <Form.Control as="select" defaultValue="Contry" style={{ width: "100px" }}>
                                 <option value="" hidden>
                                     country
@@ -755,10 +757,23 @@ class RegistrationForm extends Component {
                             </Form.Control>
                         </Form.Group>
                         <Form.Group as={Col} controlId="formGridMobile">
-                            <Form.Control type="tel" pattern="^\d{4}-\d{3}-\d{4}$" required placeholder="Mobile Number"></Form.Control>
+                            <Form.Control type="tel" placeholder="Mobile Number"></Form.Control>
                         </Form.Group>
                     </Form.Row>
 
+                    <Form.Row className="form-inline" style={{paddingBottom:"10px",fontWeight:"lighter"}}>
+                    <Form.Group controlId="formGridMobileOTP">
+                            <p style={{fontSize:"1rem"}}>Enter OTP :- </p>
+                        
+                            <OtpInput
+                                value={this.state.otp}
+                                onChange={this.handleChange}
+                                numInputs={6}
+                                separator={<span>-</span>}
+                            />
+                        </Form.Group>
+                    </Form.Row>
+                    
                     <Form.Group controlId="formGridEmail">
                         <Form.Control type="email" placeholder="example@email.com" />
                     </Form.Group>
@@ -769,20 +784,20 @@ class RegistrationForm extends Component {
                         <Form.Control type="password" placeholder="Retype yout password" />
                     </Form.Group>
 
-                    <Form.Row className="form-check-inline" >
-                    <Form.Group id="formGridCheckasUser">
-                        <Form.Check classtype="radio" label="User" />
-                    </Form.Group>
-                    
-                    <Form.Group id="formGridCheckasPartner">
-                        <Form.Check type="radio" label="Partner" />
-                    </Form.Group>
+                    <Form.Row>
+                        <Form.Group id="formGridCheckasUser">
+                            <Form.Check type="radio" inline label="User" />
+                        </Form.Group>
+
+                        <Form.Group id="formGridCheckasPartner">
+                            <Form.Check type="radio" inline label="Partner" />
+                        </Form.Group>
                     </Form.Row>
                     <Form.Row>
-                        <Form.Group as ={Row} id="formGridTermCheckbox" style={{padding:"15px"}}>
-                            <Form.Check type="checkbox" 
+                        <Form.Group as={Row} id="formGridTermCheckbox" style={{ padding: "15px" }}>
+                            <Form.Check type="checkbox"
                                 label="We accept the term and condition and privacy policy."
-                                />
+                            />
                         </Form.Group>
                     </Form.Row>
                     <Button className="btn btn-block" variant="success" type="submit">
