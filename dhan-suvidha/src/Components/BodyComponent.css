@@ -17,7 +17,7 @@
     right: 0;
     width: 30vw;
     position: absolute;
-    background-color: rgb(248, 244, 239);
+    background-image:linear-gradient(to right,rgb(195,225,233) , white);
   }
   .card { 
     box-shadow: 0 10px 8px 0 rgba(101, 79, 214, 0.2);
@@ -58,4 +58,5 @@
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
     font-weight: bold;
+    border-radius: 15px 50px 30px;
   }

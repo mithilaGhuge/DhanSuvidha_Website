@@ -61,17 +61,25 @@ class BodyComponent extends Component {
               <br></br>
               <div className="row">
                 <div className="col-sm-4 box">Mutual Funds</div>
+                <div className="col-sm-2"></div>
+                <br></br>
+                <div className="col-sm-4 box">Book Keeping</div>
               </div>
             </div>
           </div>
           <div
             className="col-sm-4"
-            style={{ backgroundColor: "rgb(248, 244, 239)" }}
+            style={{backgroundImage:"linear-gradient(rgb(195,225,233) ,white ,rgb(195,225,233))"}}
           >
             <RegisterForm></RegisterForm>
           </div>
         </div>
+          <div>
+            <Row style={{paddingBottom:"2em",backgroundImage:"linear-gradient(to right, rgb(195,225,233),white,rgb(195,225,233))"}}></Row>
+          </div>
+        
       </Container>
+     
     );
   }
 }

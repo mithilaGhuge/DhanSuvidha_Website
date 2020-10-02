@@ -9,7 +9,7 @@ class FooterComponent extends Component {
   state = {};
   render() {
     return (
-      <div className="footerBox">
+      <div className="footerBox" >
         <div className="footerDiv">
           <a className="footLink" href="#">
             About RayFintech

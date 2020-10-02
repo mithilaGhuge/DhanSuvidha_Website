@@ -20,10 +20,10 @@ class RegistrationForm extends Component {
                     </Form.Row>
 
                     <Form.Row>
-                        <Form.Group controlId="formGridCountry" style={{ fontSize: "normal" }}>
+                        <Form.Group controlId="formGridCountry" style={{ fontSize: "normal",paddingLeft:"5px" }}>
                             <Form.Control as="select" defaultValue="Contry" style={{ width: "100px" }}>
                                 <option value="" hidden>
-                                    country
+                                    Country
 								</option>
                                 <option data-countryCode="AF" value="93">
                                     AF (+93)
@@ -761,7 +761,7 @@ class RegistrationForm extends Component {
                         </Form.Group>
                     </Form.Row>
 
-                    <Form.Row className="form-inline" style={{paddingBottom:"10px",fontWeight:"lighter"}}>
+                    <Form.Row className="form-inline" style={{paddingBottom:"10px",paddingLeft:"5px" ,fontWeight:"lighter"}}>
                     <Form.Group controlId="formGridMobileOTP">
                             <p style={{fontSize:"1rem"}}>Enter OTP :- </p>
                         
@@ -781,7 +781,7 @@ class RegistrationForm extends Component {
                         <Form.Control type="password" placeholder="Password" />
                     </Form.Group>
                     <Form.Group controlId="formGridPasswordRetype">
-                        <Form.Control type="password" placeholder="Retype yout password" />
+                        <Form.Control type="password" placeholder="Re-type your password" />
                     </Form.Group>
 
                     <Form.Row>
@@ -800,7 +800,7 @@ class RegistrationForm extends Component {
                             />
                         </Form.Group>
                     </Form.Row>
-                    <Button className="btn btn-block" variant="success" type="submit">
+                    <Button className="btn btn-block" variant="info" type="submit">
                         Sign Up
                 </Button>
                 </Form>
