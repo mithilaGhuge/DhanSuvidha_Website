@@ -769,7 +769,7 @@ class RegistrationForm extends Component {
                                 value={this.state.otp}
                                 onChange={this.handleChange}
                                 numInputs={6}
-                                separator={<span>-</span>}
+                                separator={<span></span>}
                             />
                         </Form.Group>
                     </Form.Row>
