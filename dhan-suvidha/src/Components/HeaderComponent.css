@@ -5,10 +5,13 @@
 }
 .panel > .panel-heading {
   padding: 16px;
-  background-image: none;
-  background-color: rgb(148, 166, 226);
-  color: black;
-  border-color: black;
+  background-image: linear-gradient(
+    to right,
+    rgb(11, 99, 158),
+    rgb(125, 190, 125)
+  );
+  color: white;
+  font-weight: bold;
   font-size: x-large;
   text-align: center;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
