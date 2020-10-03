@@ -3,22 +3,23 @@ import ReactDOM from "react-dom";
 import HeaderComponent from "./Components/HeaderComponent";
 import BodyComponent from "./Components/BodyComponent";
 import FooterComponent from "./Components/FooterComponent";
+import AboutUs from "./pages/AboutUs";
 import "./index.css";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import * as serviceWorker from "./serviceWorker";
 
 let layout = (
   <div className="">
-    <div className="">
-      <HeaderComponent />
-    </div>
+    <HeaderComponent />
     <hr />
-    <div className="container-fluid">
-      <BodyComponent></BodyComponent>
-    </div>
-    <div className="container-fluid">
-      Insert footer component here
-      <FooterComponent></FooterComponent>
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/" exact component={BodyComponent} />
+        <Route path="/foot" component={FooterComponent} />
+        <Route path="/aboutus" component={AboutUs} />
+      </Switch>
+    </Router>
+    <FooterComponent></FooterComponent>
   </div>
 );
 
