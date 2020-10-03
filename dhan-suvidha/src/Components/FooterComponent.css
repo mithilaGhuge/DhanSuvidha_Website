@@ -26,6 +26,11 @@ a {
   color: white;
   text-decoration: none;
 }
+a:hover {
+  color: white;
+  text-shadow: 3px 3px 7px black;
+  text-decoration: none;
+}
 h5 {
   font-weight: bold;
 }
