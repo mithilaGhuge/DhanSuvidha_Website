@@ -9,7 +9,7 @@ class FooterComponent extends Component {
     return (
       <div className="footerBox">
         <div className="footerDiv">
-          <a className="footLink" href="/">
+          <a className="footLink" href="/aboutus">
             About RayFintech
           </a>
           <a className="footLink" href="/">
