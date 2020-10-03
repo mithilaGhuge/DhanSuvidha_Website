@@ -1,24 +1,30 @@
-.header{
-    font-size: 3vw;
-    font-style: italic;
-    font-weight: bold;
-    padding-top: 1%;
-    padding-left:0.5em;
-    padding-bottom: 0.5em;
-    text-align: center;
-    background: -webkit-linear-gradient( rgb(11, 99, 158),
-    rgb(124, 197, 124));
+.headerAbt {
+  font-size: 3vw;
+  font-style: italic;
+  font-weight: bold;
+  padding-top: 1%;
+  padding-left: 0.5em;
+  padding-bottom: 0.5em;
+  text-align: center;
+  background: -webkit-linear-gradient( rgb(11, 99, 158), rgb(124, 197, 124));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-P{
-    padding-left:10em;
-    text-align: justify;
-    font-weight: normal;
-    font-style: italic;
-    font-family: Arial, Helvetica, sans-serif;
-    color: beige;
-    background: linear-gradient(to right,rgb(111, 111, 194)  ,black);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+
+.boxAbt {
+  box-shadow: 15px 10px 8px 0 rgba(17, 14, 187, 0.2);
+  display:inline-flex;
+  transition: 0.3s;
+  border-radius: 20px 70px;
+  width: 60vw;
+  background-color: rgba(255, 255, 255, .4);
+  opacity: 0.7;
+  text-align: center;
+  padding: 40px 30px;
+  font-size: 17px;
+  color:rgb(15, 5, 12);
+  opacity: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  
 }
