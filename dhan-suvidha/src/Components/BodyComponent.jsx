@@ -1,17 +1,8 @@
 import React, { Component } from "react";
-import {
-  Container,
-  Row,
-  Col,
-  Form,
-  Card,
-  CardColumns,
-  Button,
-} from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 //import "bootstrap/dist/css/bootstrap.min.css";
 import RegisterForm from "./RegistrationForm.jsx";
 import "./BodyComponent.css";
-import background from "../images/background.png";
 
 class BodyComponent extends Component {
   state = {};
@@ -69,17 +60,24 @@ class BodyComponent extends Component {
           </div>
           <div
             className="col-sm-4"
-            style={{backgroundImage:"linear-gradient(rgb(195,225,233) ,white ,rgb(195,225,233))"}}
+            style={{
+              backgroundImage:
+                "linear-gradient(rgb(195,225,233) ,white ,rgb(195,225,233))",
+            }}
           >
             <RegisterForm></RegisterForm>
           </div>
         </div>
-          <div>
-            <Row style={{paddingBottom:"2em",backgroundImage:"linear-gradient(to right, rgb(195,225,233),white,rgb(195,225,233))"}}></Row>
-          </div>
-        
+        <div>
+          <Row
+            style={{
+              paddingBottom: "2em",
+              backgroundImage:
+                "linear-gradient(to right, rgb(195,225,233),white,rgb(195,225,233))",
+            }}
+          ></Row>
+        </div>
       </Container>
-     
     );
   }
 }
