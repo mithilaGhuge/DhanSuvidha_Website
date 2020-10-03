@@ -1,0 +1,24 @@
+.header{
+    font-size: 3vw;
+    font-style: italic;
+    font-weight: bold;
+    padding-top: 1%;
+    padding-left:0.5em;
+    padding-bottom: 0.5em;
+    text-align: center;
+    background: -webkit-linear-gradient( rgb(11, 99, 158),
+    rgb(124, 197, 124));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+P{
+    padding-left:10em;
+    text-align: justify;
+    font-weight: normal;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    color: beige;
+    background: linear-gradient(to right,rgb(111, 111, 194)  ,black);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}

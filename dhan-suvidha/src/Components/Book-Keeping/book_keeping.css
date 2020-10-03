@@ -1,0 +1,17 @@
+.mainBackground{
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+.header{
+    font-size: 7vw;
+    font-style: italic;
+    font-weight: bold;
+    padding-top: 5%;
+    padding-left: 40%;
+    text-align: center;
+    background: -webkit-linear-gradient( rgb(11, 99, 158),
+    rgb(124, 197, 124));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

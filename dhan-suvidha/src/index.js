@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import HeaderComponent from "./Components/HeaderComponent";
 import BodyComponent from "./Components/BodyComponent";
 import FooterComponent from "./Components/FooterComponent";
+import BookKeeping from "./Components/Book-Keeping/Book_Keeping"
 import AboutUs from "./pages/AboutUs";
 import "./index.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -17,6 +18,7 @@ let layout = (
         <Route path="/" exact component={BodyComponent} />
         <Route path="/foot" component={FooterComponent} />
         <Route path="/aboutus" component={AboutUs} />
+        <Route path="/Book_Keeping" component={BookKeeping} />
       </Switch>
     </Router>
     <FooterComponent></FooterComponent>

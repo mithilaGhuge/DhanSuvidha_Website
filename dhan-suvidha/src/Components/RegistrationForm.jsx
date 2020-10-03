@@ -778,7 +778,7 @@ class RegistrationForm extends Component {
             }}
           >
             <Form.Group controlId="formGridMobileOTP">
-              <p style={{ fontSize: "1rem" }}>Enter OTP :- &nbsp;</p>
+              <h2 style={{ fontSize: "1rem" }}>Enter OTP :- &nbsp;</h2>
 
               <OtpInput
                 value={this.state.otp}
