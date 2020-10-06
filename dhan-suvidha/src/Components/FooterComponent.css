@@ -28,7 +28,6 @@ a {
 }
 a:hover {
   color: white;
-  text-shadow: 3px 3px 7px black;
   text-decoration: none;
 }
 h5 {

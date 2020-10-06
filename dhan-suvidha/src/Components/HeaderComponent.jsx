@@ -1,10 +1,17 @@
-import React, { Component } from "react";
+import React, { Component} from "react";
 import "./HeaderComponent.css";
 import logo from "../images/dhanSuvidhaLogo.png";
+import LoginModel from "./LoginPage"
+import { Button, ButtonToolbar } from "react-bootstrap";
 
 class HeaderComponent extends Component {
   state = {};
+  constructor(props){
+    super(props);
+    this.state={addModelShow:false}
+  }
   render() {
+    let addModelClose=() => this.setState({addModelShow:false});
     return (
       <div>
         <div className="mainHead">
@@ -47,10 +54,17 @@ class HeaderComponent extends Component {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a href="/login" className="nav-link">
-                    Login
-
-                  </a>
+                  <ButtonToolbar>
+                    <Button
+                      variant='info'
+                      onClick={()=> this.setState({addModelShow:true})}
+                      > Login
+                    </Button>
+                    <LoginModel
+                    show={this.state.addModelShow}
+                    onHide={addModelClose}
+                    />
+                  </ButtonToolbar>
                 </li>
               </ul>
             </div>
@@ -74,8 +88,6 @@ class HeaderComponent extends Component {
       </div>
     );
   }
-  click = () => {
-    console.log("I am clicked!!!");
-  };
+
 }
 export default HeaderComponent;

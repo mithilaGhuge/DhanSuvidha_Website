@@ -1,0 +1,29 @@
+.headerLog {
+    font-size: 3vw;
+    font-style: italic;
+    font-weight: bold;
+    padding-top: 1%;
+    padding-left: 0.5em;
+    padding-bottom: 0.5em;
+    text-align: justify;
+    background: -webkit-linear-gradient( rgb(13, 53, 77), rgb(31, 6, 70));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .boxLog {
+    width: 320px;
+    background-color: blue;
+    
+  }
+  .anchorLog {
+    color:blue;
+    text-decoration: underline;
+    text-align: center;
+    padding: 0.2em;
+    padding-left: 10em;
+  }
+  .anchorLog:hover {
+    color: black;
+    text-decoration: none;
+  }

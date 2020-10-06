@@ -5,7 +5,6 @@ import BodyComponent from "./Components/BodyComponent";
 import FooterComponent from "./Components/FooterComponent";
 import BookKeeping from "./Components/Book-Keeping/Book_Keeping"
 import AboutUs from "./pages/AboutUs";
-import LoginPage from "./Components/LoginPage";
 import MissionVision from "./pages/MissionVision"
 import ourService from "./pages/ourService"
 import partners from "./pages/Partners"
@@ -31,7 +30,6 @@ let layout = (
         <Route path="/Book_Keeping" component={BookKeeping} />
         <Route path="/career" component={Career}/>
         <Route path="/contactus" component={ContactUs}/>
-        <Route path="/login" component={LoginPage} />
       </Switch>
     </Router>
     <FooterComponent></FooterComponent>
