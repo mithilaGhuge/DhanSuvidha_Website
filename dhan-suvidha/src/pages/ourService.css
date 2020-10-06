@@ -1,35 +1,47 @@
 .headerServ {
-    font-size: 3vw;
-    font-style: italic;
-    font-weight: bold;
-    padding-top: 1%;
-    padding-left: 0.5em;
-    padding-bottom: 0.5em;
-    text-align: justify;
-    background: -webkit-linear-gradient( rgb(13, 53, 77), rgb(39, 207, 103));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  
-  .boxServ {
-    box-shadow: 15px 10px 8px 0 rgba(17, 14, 187, 0.2);
-    display:inline-flex;
-    transition: 0.3s;
-    border-radius: 20px 70px;
-    background-image: linear-gradient(to right, rgb(11, 99, 158),
-    rgb(125, 190, 125));
-    opacity: 0.7;
-    padding: 40px 30px;
-    font-size: 18px;
-    opacity: 1.5;
-    color:rgb(248, 238, 245);
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: italic;
-    line-height: 1.5em;
-  }
-  .anchorServLeft{
-      color:greenyellow;
-  }
-  .anchorServRight{
-    color:rgb(28, 28, 187);
+  font-size: 3vw;
+  font-style: italic;
+  font-weight: bold;
+  padding-top: 1%;
+  padding-left: 0.5em;
+  padding-bottom: 0.5em;
+  text-align: justify;
+  background: -webkit-linear-gradient(rgb(13, 53, 77), rgb(39, 207, 103));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.boxServ {
+  box-shadow: 15px 10px 8px 0 rgba(17, 14, 187, 0.2);
+  display: inline-flex;
+  transition: 0.3s;
+  border-radius: 20px 70px;
+  background-image: linear-gradient(
+    to right,
+    rgb(11, 99, 158),
+    rgb(125, 190, 125)
+  );
+  opacity: 0.7;
+  padding: 40px 30px;
+  font-size: 18px;
+  opacity: 1.5;
+  color: rgb(248, 238, 245);
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  line-height: 1.5em;
+}
+.anchorServLeft {
+  color: greenyellow;
+}
+.anchorServRight {
+  color: rgb(28, 28, 187);
+}
+.serviceImageBox {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.serviceImage {
+  width: 20vw;
 }
