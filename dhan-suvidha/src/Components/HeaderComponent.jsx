@@ -42,13 +42,14 @@ class HeaderComponent extends Component {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a href="/" className="nav-link">
+                  <a href="/partners" className="nav-link">
                     Be our Partner
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a href="/" className="nav-link">
+                  <a href="/login" className="nav-link">
                     Login
+
                   </a>
                 </li>
               </ul>
@@ -66,7 +67,7 @@ class HeaderComponent extends Component {
         >
           <div className="panel-heading panel-heading-custom">
             <div className="panel-body">
-              Globally Trusted Platform for Personal Financial Planning.
+               ONE STOP SOLUTION FOR FINANCIAL NEED
             </div>
           </div>
         </div>

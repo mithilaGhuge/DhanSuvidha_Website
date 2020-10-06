@@ -12,19 +12,22 @@ class FooterComponent extends Component {
           <a className="footLink" href="/aboutus">
             About RayFintech
           </a>
-          <a className="footLink" href="/">
+          <a className="footLink" href="/mission">
             Mission & Vision
           </a>
-          <a className="footLink" href="/">
+          <a className="footLink" href="/services">
             Our Services
           </a>
 
-          <a className="footLink" href="/">
+          <a className="footLink" href="/partners">
             Partners
           </a>
 
-          <a className="footLink" href="/">
+          <a className="footLink" href="/career">
             Career
+          </a>
+          <a className="footLink" href="/contactus">
+            Contact us
           </a>
         </div>
         <div className="footerDiv">

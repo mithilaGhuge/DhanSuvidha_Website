@@ -16,7 +16,7 @@ class Book_Keeping extends Component {
         return (
             <div style={{paddingBottom:"2em",backgroundImage:"linear-gradient(to right, rgb(195,225,233),white,rgb(195,225,233))"}}>
                  <section style={sectionStyle}>
-                     <h1 className="header">Coming <br></br>&nbsp;&nbsp;Soon</h1>
+                     <h1 className="header">Coming <br></br>Soon</h1>
                 </section>
             </div>
                

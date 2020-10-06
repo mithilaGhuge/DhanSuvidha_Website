@@ -75,7 +75,15 @@ class BodyComponent extends Component {
               backgroundImage:
                 "linear-gradient(to right, rgb(195,225,233),white,rgb(195,225,233))",
             }}
-          ></Row>
+          >
+             <Container >
+               <div className="Boxheader">
+               <h1>“You cannot escape the responsibility of tomorrow by evading it today.”</h1>
+                <h2>~Abraham Lincoln~</h2>
+               </div>
+             </Container>
+          </Row>
+
         </div>
       </Container>
     );
