@@ -816,7 +816,7 @@ class RegistrationForm extends Component {
             >
               <Form.Check
                 type="checkbox"
-              />We accept the<a style={{textDecoration:"underline",color:"blue"}} href="/"> &nbsp; term and condition</a> &nbsp; and<a style={{textDecoration:"underline",color:"blue"}} href="/">  &nbsp;privacy policy.</a>
+              />We accept the &nbsp;<a style={{textDecoration:"underline",color:"blue"}} href="/">  term and condition</a> &nbsp; and &nbsp;<a style={{textDecoration:"underline",color:"blue"}} href="/"> privacy policy.</a>
             </Form.Group>
           </Form.Row>
           <Button className="btn btn-block" variant="info" type="submit">

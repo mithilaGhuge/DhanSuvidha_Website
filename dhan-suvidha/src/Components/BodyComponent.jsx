@@ -56,6 +56,12 @@ class BodyComponent extends Component {
                 <br></br>
                 <div className="col-sm-4 box"><a className="anchor"  href="/Book_Keeping">Book Keeping</a></div>
               </div>
+              <br></br>
+              <div className="row">
+                <div className="col-sm-4 box"><a className="anchor"  href="/Book_Keeping">Dubai Funds</a></div>
+                <div className="col-sm-2"></div>
+                <br></br>
+              </div>
             </div>
           </div>
           <div

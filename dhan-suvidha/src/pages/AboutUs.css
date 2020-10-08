@@ -2,11 +2,10 @@
   font-size: 3vw;
   font-style: italic;
   font-weight: bold;
-  padding-top: 1%;
-  padding-left: 0.5em;
+  text-align: center;
   padding-bottom: 0.5em;
-  text-align: justify;
-  background: -webkit-linear-gradient( rgb(13, 53, 77), rgb(31, 6, 70));
+  padding-left: 15em;
+  background: -webkit-linear-gradient( rgb(24, 99, 145), rgb(31, 6, 70));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -14,6 +13,7 @@
 .boxAbt {
   box-shadow: 15px 10px 8px 0 rgba(17, 14, 187, 0.2);
   display:inline-flex;
+  width: 70vw;
   transition: 0.3s;
   border-radius: 20px 70px;
   background-image: linear-gradient(to right, rgb(11, 99, 158),
@@ -28,3 +28,8 @@
   line-height: 1.5em;
   
 }
+.abtImg{
+  min-width: 100%;  ;
+  height: 300px;
+  padding-bottom: 1em;
+} 

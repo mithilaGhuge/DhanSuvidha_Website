@@ -1,6 +1,6 @@
 .boxContact {
     box-shadow: 15px 10px 8px 0 rgba(17, 14, 187, 0.2);
-    display:inline-flex;
+    display: flex;
     transition: 0.3s;
     border-radius: 20px 70px;
     background-image: linear-gradient(to right, rgb(190, 20, 14),
@@ -14,4 +14,13 @@
     font-style: italic;
     line-height: 1.5em;
     
+  }
+  .headerCnt {
+    font-size: 2vw;
+    font-style: italic;
+    font-weight: bold;
+    text-align: justify;
+    background: -webkit-linear-gradient( rgb(24, 99, 145), rgb(31, 6, 70));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
