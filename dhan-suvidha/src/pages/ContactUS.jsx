@@ -10,7 +10,7 @@ import {
   ButtonGroup,InputGroup,FormControl
 } from "react-bootstrap";
 import "./ContactUS.css";
-import contactImg from  "../images/contactUs.png";
+import contactImg from  "../images/cntImg.jpg";
 import contactBuildImg from  "../images/contactBuild.png";
 
 class ContactUS extends Component {
