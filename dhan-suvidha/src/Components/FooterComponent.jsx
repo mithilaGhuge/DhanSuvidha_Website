@@ -20,10 +20,6 @@ class FooterComponent extends Component {
           </a>
 
           <a className="footLink" href="/partners">
-            Partners
-          </a>
-
-          <a className="footLink" href="/career">
             Career
           </a>
           <a className="footLink" href="/contactus">

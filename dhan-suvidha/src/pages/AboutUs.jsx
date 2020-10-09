@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./AboutUs.css";
 import { Container, Row, Col } from "react-bootstrap";
 import servImg from "../images/serv.png";
+import adviceImg from "../images/advice.png";
 
 class AboutUs extends Component {
   state = {};
@@ -21,11 +22,11 @@ class AboutUs extends Component {
         </div>
         <div className="row">
           <h1 className="headerAbt" style={{ fontFamily: "cursive" }}>
-            OUR <br></br> COMPANY
+            OUR COMPANY
           </h1>
-          <div className="row">
-          <div className="col-sm-2"></div>
-          <div className="col-sm-8">
+        </div>
+        <div className="row">
+          <div className="col-sm-7">
             <p className="boxAbt">
               {" "}
               A different industry expert comes together for a common objective
@@ -51,8 +52,10 @@ class AboutUs extends Component {
               various products.
             </p>
           </div>
-          <div className="col-sm-3"></div>
-        </div>
+
+          <div className="col-sm-5">
+            <img className="adviceImg" src={adviceImg} alt="adImg" />
+          </div>
         </div>
       </Container>
     );
