@@ -4,14 +4,16 @@ CREATE table if not exists SIGNUP_USER_DETAILS
  			USR_ID 				BIGSERIAL  PRIMARY key NOT NULL--INT GENERATED ALWAYS AS IDENTITY
 			,USR_NAME 			VARCHAR (100) NOT NULL
 			,USR_EMAIL_ID 		VARCHAR(100) NOT NULL
-			,USR_MOBILE 		INT NOT NULL
+			,USR_MOBILE 		varchar(15) NOT NULL
 			,USR_ENCR_PWD 		VARCHAR(500) NOT null
 			,unique (USR_EMAIL_ID)
 			,unique (USR_MOBILE)
 );
 
+alter table SIGNUP_USER_DETAILS alter column USR_MOBILE set data type varchar(15);
 
-CREATE TABLE if not exists MEMBER
+
+CREATE TABLE if not exists member
 (
 			MEMBER_ID 			BIGINT ,
 			F_NAME 				Varchar(50),
@@ -31,6 +33,8 @@ CREATE TABLE if not exists MEMBER
 ALTER TABLE "UI"."member" ADD CONSTRAINT fk_mem_id FOREIGN KEY (Member_Id) REFERENCES "UI".SIGNUP_USER_DETAILS(USR_ID);
 ALTER TABLE "UI"."member" ADD CONSTRAINT fk_mem_type_id FOREIGN KEY (MEM_TYPE_ID) REFERENCES "REF".REF_MEM_TYPE(TYPE_ID);
 ALTER TABLE "UI"."member" ADD CONSTRAINT fk_mem_Gender FOREIGN KEY (gender_id) REFERENCES "REF".ref_gender(gender_id);
+
+alter table member alter column MOBILE set data type varchar(15);
 
 
 DROP TABLE IF EXISTS MEMBER_KYC;
@@ -59,6 +63,9 @@ CREATE TABLE MEMBER_ACCOUNTS
 ) ;
 
 ALTER TABLE "UI".member_accounts ADD CONSTRAINT member_accounts_fk FOREIGN KEY (member_id) REFERENCES "UI".signup_user_details(usr_id);
+
+
+CREATE TABLE IF NOT EXISTS 
 
 
 
