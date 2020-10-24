@@ -103,3 +103,8 @@ CREATE TABLE 		 REF_INVESTMENT_TYPE
 			INV_TYPE 				VARCHAR(100) 
 );
 
+create table If not exists "REF"."REF_PROM_SOURCE"
+(
+			PROM_ID				SERIAL primary key not null,
+			PROM_SOURCE			VARCHAR(20)
+)
