@@ -65,7 +65,30 @@ CREATE TABLE MEMBER_ACCOUNTS
 ALTER TABLE "UI".member_accounts ADD CONSTRAINT member_accounts_fk FOREIGN KEY (member_id) REFERENCES "UI".signup_user_details(usr_id);
 
 
-CREATE TABLE IF NOT EXISTS 
+create table if not exists "UI".Web_Contact_us_details
+(
+			ID SERIAL 			not null,
+			FULL_NAME 			varchar(50) not null,
+			Mobile_Number 		varchar(15) not null,
+			Email_Id 			varchar(15) not null,
+			Cust_Type	 		varchar(15) not null,
+			Cust_Req			varchar(10) not null,
+			Cust_Message 		Varchar(8000)
+)
 
+create table if not exists "UI".Web_Partner_details
+(
+			ID 					SERIAL not null,
+			FULL_NAME 			varchar(50) not null,
+			Mobile_Number 		varchar(15) not null,
+			Email_Id 			varchar(15) not null,
+			ADD1				varchar(50) not null,
+			Add2                varchar(50) not null,
+			DOB					DATE,
+			PROM_SOURCE			int
+)
+
+
+ALTER TABLE "UI".web_partner_details ADD CONSTRAINT fk_PROM_SOURCE FOREIGN KEY (PROM_SOURCE) REFERENCES "REF"."REF_PROM_SOURCE"(PROM_ID);
 
 
