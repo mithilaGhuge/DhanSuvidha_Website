@@ -85,6 +85,7 @@ create table if not exists "UI".Web_Partner_details
 			ADD1				varchar(50) not null,
 			Add2                varchar(50) not null,
 			DOB					DATE,
+			PART_REQ			VARCHAR(200),
 			PROM_SOURCE			int
 )
 
