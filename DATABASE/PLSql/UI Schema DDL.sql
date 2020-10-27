@@ -21,7 +21,7 @@ CREATE TABLE if not exists member
 			DOB 				DATE,
 			GENDER_ID 			INT,
 			MOBILE 				int not null,
-			EMAILID 			varchar(20) not null,
+			EMAILID 			varchar(50) not null,
 			ADD_1 				varchar(50),
 			ADD_2 				Varchar(50),
 			CITY 				Varchar(10),
@@ -70,22 +70,24 @@ create table if not exists "UI".Web_Contact_us_details
 			ID SERIAL 			not null,
 			FULL_NAME 			varchar(50) not null,
 			Mobile_Number 		varchar(15) not null,
-			Email_Id 			varchar(15) not null,
+			Email_Id 			varchar(50) not null,
 			Cust_Type	 		varchar(15) not null,
 			Cust_Req			varchar(10) not null,
 			Cust_Message 		Varchar(8000)
 )
+
+
 
 create table if not exists "UI".Web_Partner_details
 (
 			ID 					SERIAL not null,
 			FULL_NAME 			varchar(50) not null,
 			Mobile_Number 		varchar(15) not null,
-			Email_Id 			varchar(15) not null,
+			Email_Id 			varchar(50) not null,
 			ADD1				varchar(50) not null,
 			Add2                varchar(50) not null,
 			DOB					DATE,
-			PART_REQ			VARCHAR(200),
+			PART_REQ			VARCHAR(500),
 			PROM_SOURCE			int
 )
 
